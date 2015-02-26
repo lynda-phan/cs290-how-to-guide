@@ -1,0 +1,11 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+<h1>URL Shortener</h1>
+<h2>Step 1: copy and paste URL</h2>
+<form action="/shorten" method="POST">
+    <input type="text" name="url" style="width:500px">
+    <h2>Step 2: click submit to retrieve a shorter URL</h2>
+    <input type="submit" name="submit">
+</form>
+{% endblock %}
